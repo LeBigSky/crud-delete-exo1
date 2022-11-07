@@ -1,5 +1,6 @@
-<section>
-  <table class="table">
+<section class="mx-auto w-75 mt-5">
+
+    <table class="table">
       <thead>
         <tr>
           <th scope="col">Nom</th>
@@ -20,8 +21,6 @@
             <button type="submit" class="btn btn-danger">Delete</button>
             </form>
           </td>
-        </tr>
-        @endforeach
         </tr>
         @endforeach
       </tbody>

@@ -1,4 +1,4 @@
-<section>
+<section class="mx-auto w-75 mt-5">
   <table class="table">
       <thead>
         <tr>

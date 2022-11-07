@@ -1,4 +1,5 @@
-<section>
+<section class="mx-auto w-75 mt-5">
+  <button class="btn btn-warning mb-4"> <a href="{{ route ('create') }}" style="text-decoration: none; color:black">Ajouter &#10133;</a></button>
     <table class="table">
         <thead>
           <tr>
@@ -20,8 +21,6 @@
               <button type="submit" class="btn btn-danger">Delete</button>
               </form>
             </td>
-          </tr>
-          @endforeach
           </tr>
           @endforeach
         </tbody>
