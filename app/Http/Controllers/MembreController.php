@@ -28,11 +28,12 @@ class MembreController extends Controller
         return view('pages.femmes', compact('membres'));
     }
     public function hommes (){
-        $membres= Membre::take(15)->get()->where('genre','=' ,'Masculin');
-        return view('pages.hommes', compact('membres'));
+        $total= Membre::where('genre', '=', 'Masculin')->count();
+        $membres= Membre::take(15)->where('genre','=' ,'Masculin')->get();
+        return view('pages.hommes', compact('membres', 'total'));
     }
     public function delete (Membre $id){
             $id->delete();
-            return redirect('home');
+            return redirect('/');
     }
 }

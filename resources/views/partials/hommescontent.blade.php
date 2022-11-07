@@ -1,5 +1,6 @@
 <section class="mx-auto w-75 mt-5">
   <table class="table">
+    <h2>total des membres hommes = {{ $total }}</h2>
       <thead>
         <tr>
           <th scope="col">Nom</th>
