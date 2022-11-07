@@ -9,12 +9,16 @@
                     </div>
                     <div class="d-flex flex-column">
                         <label for="age">inserez l'age</label>
+                        
                         <input type="number" name="age" id="age">
             
                     </div>
                     <div class="d-flex flex-column">
                         <label for="text">entrez le genre</label>
-                        <input type="text" name="genre" id="genre">
+                        <select name="genre" id="genre">
+                            <option value="Masculin">Masculin</option>
+                            <option value="feminin">Feminin</option>
+                        </select>
                     </div>
                     <button type="submit" class="btn btn-warning">Ajouter le membre</button> 
                     </form>

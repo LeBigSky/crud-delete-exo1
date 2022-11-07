@@ -14,7 +14,7 @@
           <td>{{ $membre['nom'] }}</td>
           <td>{{ $membre['genre'] }}</td>
           <td>{{ $membre['age'] }}</td>
-          <td>
+          <td class="d-flex justify-content-end">
             <form action="/delete/{{$membre->id}}" method="POST">
             @csrf
             @method('DELETE')
